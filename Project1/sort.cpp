@@ -8,7 +8,7 @@ int partition(vector<Food>& arr, int low, int high) {
     int i = low - 1;
 
     for (int j = low; j < high; j++) {
-        if (arr[j].price < pivot) {
+        if (arr[j].price > pivot) {
             i++;
             swap(arr[i], arr[j]);
         }
@@ -79,7 +79,7 @@ void mergePrice(vector<Food>& arr, int l, int m, int r) {
     int i = l, j = m + 1;
 
     while (i <= m && j <= r) {
-        if (arr[i].price < arr[j].price)
+        if (arr[i].price > arr[j].price)
             temp.push_back(arr[i++]);
         else
             temp.push_back(arr[j++]);
