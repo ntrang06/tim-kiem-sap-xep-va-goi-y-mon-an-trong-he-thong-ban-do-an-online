@@ -11,8 +11,6 @@
 
 using namespace std;
 using namespace chrono;
-
-// ===== KHAI BÁO =====
 vector<Food> getFoodList();
 
 void quickSort(vector<Food>&, int, int);
@@ -164,8 +162,6 @@ int main() {
 
         // ================= RECOMMEND =================
         else if (choice == 3) {
-
-            // 👉 tự lấy 1 món làm keyword (ví dụ random)
             string keyword = foods[rand() % foods.size()].name;
 
             cout << "\nKeyword tu dong: " << keyword << endl;
@@ -181,8 +177,6 @@ int main() {
             vector<Food> resScore = recommendScoring(foods, keyword);
             auto end2 = high_resolution_clock::now();
             double timeScore = duration<double, milli>(end2 - start2).count();
-
-            // ===== HIỂN THỊ =====
             cout << "\n===== GOI Y MON AN (TOP 10-15) =====\n";
 
             for (auto f : resScore) {
@@ -190,8 +184,6 @@ int main() {
                     << " | Gia: " << f.price
                     << " | Rating: " << f.rating << endl;
             }
-
-            // ===== TIME =====
             cout << "\n--- THOI GIAN ---\n";
             cout << "Rule-based: " << timeRule << " ms\n";
             cout << "Scoring: " << timeScore << " ms\n";

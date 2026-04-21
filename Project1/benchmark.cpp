@@ -6,8 +6,6 @@
 
 using namespace std;
 using namespace chrono;
-
-// khai báo
 void quickSort(vector<Food>&, int, int);
 void mergeSort(vector<Food>&, int, int);
 int binarySearch(vector<Food>& arr, string target);

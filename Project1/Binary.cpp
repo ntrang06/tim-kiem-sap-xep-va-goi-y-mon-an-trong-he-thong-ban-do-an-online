@@ -3,8 +3,6 @@
 #include <string>
 
 using namespace std;
-
-// Sửa lại chính xác theo những gì Linker đang tìm kiếm trong ảnh lỗi
 int binarySearch(vector<Food>& arr, string target) {
     int left = 0;
     int right = (int)arr.size() - 1;
