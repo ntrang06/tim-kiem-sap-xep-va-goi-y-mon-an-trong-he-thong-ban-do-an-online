@@ -44,7 +44,7 @@ int main() {
 
     do {
         cout << "\n===== MENU =====\n";
-        cout << "1. Sap xep theo gia mon an (Quick vs Merge)\n";
+        cout << "1. Sap xep mon an (Quick vs Merge)\n";
         cout << "2. Tim kiem mon an (Binary vs Trie)\n";
         cout << "3. Goi y mot vai mon (Rule vs Scoring)\n";
         cout << "0. Thoat\n";
